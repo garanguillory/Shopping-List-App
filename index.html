@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Shopping List App</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/styles.css" rel="stylesheet"> -->
+  <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Below <link> is for fonts from google fonts -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Poiret+One|Oxygen:400,700' rel='stylesheet' type='text/css'> -->
+  
+</head>
+<body>
+  <div class="mainContent">
+    <div class="containter">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="shoppingList">
+            <h1>Shopping List</h1>
+            <p>
+              Add an item, simply type in the name + quantity and press "enter/return"</br>
+              Delete an item, click the "X"</br>
+              Check an item off the list, click the "✓"</br>
+              Erase all and start over, click the "Delete" button
+            </p>
+            <div class="form-group">
+              <form>
+                <input id="item" type="text" name="item" placeholder="item" >
+
+                <input type="number" name="quantity" placeholder="quantity" min="1" max="1000000">
+                <input id="additem" type="submit" value="add item">
+              </form>
+            </div>
+            <div class="row">
+              <div class="theList">
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-check"></i>Tacos<i class="fa fa-remove"></i></li>
+                  <li><i class="fa fa-check"></i>Bananas<i class="fa fa-remove"></i></li>
+                  <li><i class="fa fa-check"></i>Cebollas<i class="fa fa-remove"></i></li>
+                  <li><i class="fa fa-check"></i>Crayons<i class="fa fa-remove"></i></li>
+                  <li><i class="fa fa-check"></i>Club Soda<i class="fa fa-remove"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <form action="">
+                  <button type="button" class="btn btn-danger btn-delete">Delete List</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+  
+}
+
+.shoppingList{
+  text-align: center;
+}
+/*.shoppingList h1,
+.shoppingList p {
+  text-align: left;
+}*/
+
+.theList > ul > li{
+  background: blue;
+  color: white;
+  margin-top: 0.25%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid red;
+}
+
+.fa-check:hover {
+  color: limegreen;
+}
+.fa-remove:hover {
+  color: red;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+/*.theList ul i.fa-check {
+  color: pink;
+}*/
+.theList ul i.fa-check:hover {
+  color: limegreen;
+}
+
+/*.theList ul i.fa-remove {
+  color: pink;
+}*/
+.theList ul i.fa-remove:hover {
+  color: red;
+}
+
+/*
+Position the check and "x" mark on list items
+Add 
+*/
