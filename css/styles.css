@@ -1,9 +1,28 @@
 body{
-  
+  background: url(http://alexandracollege.eu/wp-content/uploads/2014/04/Fresh-Vegetables.jpg);
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+
+body:before {
+  content:"";
+  display:block;
+  position:fixed;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  z-index:-1;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .shoppingList{
   text-align: center;
+}
+.shoppingList h1 {
+  color: white;
 }
 
 .instructions {
@@ -16,6 +35,24 @@ body{
   padding-left: 2.5%;
   padding-right: 0.5%;
   margin-bottom: 2%;
+  background: lightblue;
+  border: 1px solid darkblue;
+  color: white;
+}
+
+.shoppingList h1{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 50%;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+  background: lightblue;
+  border: 1px solid darkblue;
+  color: white;
 }
 
 .theList > ul > li{
@@ -62,6 +99,11 @@ body{
 #item,
 #quantity {
   border-radius: 4px;
+  background: lightblue;
+}
+
+#additem {
+  background: blue;
 }
 
 /*
